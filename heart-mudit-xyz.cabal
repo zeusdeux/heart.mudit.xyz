@@ -60,11 +60,14 @@ executable heart-mudit-xyz
   -- other-extensions:
 
   -- Other library packages from which modules are imported.
-  build-depends:       base >=4.8 && <4.9,
-                       scotty,
-                       hoauth2,
-                       aeson,
-                       blaze-html
+  build-depends:       aeson
+                     , base >=4.8 && <4.9
+                     , blaze-html
+                     , bytestring >= 0.10.6.0
+                     , containers >= 0.5.6.2
+                     , directory >= 1.2.2.0
+                     , hoauth2
+                     , scotty
 
   -- Directories containing source files.
   hs-source-dirs:      src
